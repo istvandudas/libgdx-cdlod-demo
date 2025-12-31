@@ -22,7 +22,7 @@ Both heightmaps are prepared according to the cdlod-terrain requirements:
 - Linear RGBA8888 format with 
 - RG‑encoded 16‑bit height values.
 
-You can switch between the two terrain sets in [TerrainDemo.java (lines 68–74)](https://github.com/istvandudas/libgdx-cdlod-demo/blob/src/main/java/org/cdlod/terrain/TerrainDemo.java#L68-L74)
+You can switch between the two terrain sets in [TerrainDemo.java (lines 68–74)](https://github.com/istvandudas/libgdx-cdlod-demo/blob/main/src/main/java/org/cdlod/terrain/TerrainDemo.java#L68-L74)
 - by toggling the commented texture assignments.
 - the missing normal map for Grand Mountain is not a problem, but you will need to adjust the height offset and scale.
 

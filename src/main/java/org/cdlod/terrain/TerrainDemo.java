@@ -66,18 +66,16 @@ public class TerrainDemo extends ApplicationAdapter {
 		terrain = new TerrainWrapper(Terrain.builder()
 				.material(TerrainMaterial.builder()
 						.textures(
-								Gdx.files.classpath("asset/terrain/grand-mountain/height.png"),
-								Gdx.files.classpath("asset/terrain/grand-mountain/diffuse.png")
-								//Gdx.files.classpath("asset/terrain/canyon/height.png"),
-								//Gdx.files.classpath("asset/terrain/canyon/diffuse.png"),
-								//Gdx.files.classpath("asset/terrain/canyon/normal.png")
+								//Gdx.files.classpath("asset/terrain/grand-mountain/height.png"),
+								//Gdx.files.classpath("asset/terrain/grand-mountain/diffuse.png")
+								Gdx.files.classpath("asset/terrain/canyon/height.png"),
+								Gdx.files.classpath("asset/terrain/canyon/diffuse.png"),
+								Gdx.files.classpath("asset/terrain/canyon/normal.png")
 						)
 						.terrain(
 								8192.0f,
-								//0.07f,
-								//-1200.0f,
-								0.1f,
-								0.0f,
+								0.07f,
+								-1200.0f,
 								64
 						)
 						.addon(DayNightCycleAddon.builder().enabled(false).build())
