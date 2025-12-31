@@ -1,0 +1,19 @@
+plugins {
+    id("java")
+    id("io.freefair.lombok") version "9.1.0"
+}
+
+group = 'org.cdlod'
+version = '0.1.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.cdlod:libgdx-terrain:$cdlodTerrainVersion"
+    implementation "com.badlogicgames.gdx:gdx:$libGdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$libGdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-platform:$libGdxVersion:natives-desktop"
+}
