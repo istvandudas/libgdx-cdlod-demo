@@ -1,10 +1,17 @@
 plugins {
     id("java")
     id("io.freefair.lombok") version "9.1.0"
+    id("com.gradleup.shadow") version "9.3.0"
 }
 
 group = 'org.cdlod'
 version = '0.1.0'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.cdlod.terrain.TerrainDemoLauncher'
+    }
+}
 
 repositories {
     mavenLocal()

@@ -10,13 +10,28 @@
 - This project is a companion to the main [libgdx-cdlod](https://github.com/istvandudas/libgdx-cdlod) library.
 - Its purpose is to demonstrate how to integrate and use CDLOD terrain rendering within a LibGDX application.
 
+## How to Use
+- The project is designed to be built as a self‑contained executable JAR using the shadowJar Gradle task. Then you can run it with:
+```bash
+java -jar libgdx-terrain-demo-0.1.0-all.jar
+```
+on Mac
+```bash
+java -XstartOnFirstThread -jar libgdx-terrain-demo-0.1.0-all.jar
+```
+- You can also clone the project and run it directly from any IDE you prefer (I use IntelliJ).
+- The generated fat JAR is approximately 200MB due to the large texture samples included in the demo.
+- Before building, make sure that the [libgdx-cdlod](https://github.com/istvandudas/libgdx-cdlod) project is cloned and 
+published to your local Maven repository, since this demo uses it as a regular dependency.
+- Enjoy flying around the terrain 🙂
+
 ## The demo showcases
 Two sets of high‑quality terrain height, diffuse, and normal textures sourced from [MotionForgePictures](https://www.motionforgepictures.com/height-maps/):
 - Canyon and River
   ![Ilustration 1](imgs/canyon-with-quads.png)
 - Grand Mountain
   ![Ilustration 1](imgs/grand-mountain-with-quads.png)
-  - This pack does not include a normal map. It provides a bump map instead, which is not yet supported by cdlod-terrain, this is the reason of the light quality drop.
+  - This pack does not include normal map. The original source provides bump map instead, which is not yet supported by cdlod-terrain, this is the reason of the light quality drop.
 
 Both heightmaps are prepared according to the cdlod-terrain requirements:
 - Linear RGBA8888 format with 
